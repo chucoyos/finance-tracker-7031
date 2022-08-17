@@ -41,6 +41,7 @@ gem 'devise'
 # style devise views
 gem 'devise-i18n'
 gem 'devise-bootstrap5'
+gem 'iex-ruby-client'
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 gem 'bcrypt', '~> 3.1.7'
