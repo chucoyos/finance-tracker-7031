@@ -20,11 +20,6 @@
     </div>
   <% end %>
 </div>
-
-<% if @stock %>
-  <div class="card card-header results-block mt-3">
-    <strong>Symbol: </strong> <%= @stock.ticker %>
-    <strong>Name: </strong> <%= @stock.name %>
-    <strong>Price: </strong> <%= @stock.last_price %>
-  </div>
-<% end %>
+<div class="results">
+  <%= render 'users/result' %>
+</div>
