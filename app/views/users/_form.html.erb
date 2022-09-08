@@ -1,0 +1,20 @@
+<div class="search-area">
+  <h3>Search Stocks</h3>
+  <%= form_tag search_stock_path, method: :get do %>
+    <div class="form-group row">
+      <div class="col-sm-9 no-right-padding">
+        <%= text_field_tag :stock, 
+          params[:stock], 
+          placeholder: "Stock ticker symbol", 
+          autofocus: true, 
+          class: "form-control form-control-lg" 
+        %>
+      </div>
+      <div class="col sm-3 no-left-padding">
+        <%= button_tag type: :submit, class: "btn btn-success" do %>
+          <i class="bi bi-search" style="font-size: 1.5rem"></i>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</div>
